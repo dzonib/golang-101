@@ -2,27 +2,40 @@ package main
 
 import "fmt"
 
-func main() {
-	// creating variable using var
-	// var name = "Dzoni"
+// can't declare outside of a function
+// kingkong := true
 
+func main() {
+	// MAIN TYPES
+	// string
+	// bool
 	// int
+	// int  int8  int16  int32  int64
+	// uint uint8 uint16 uint32 uint64 uintptr
+	// byte - alias for uint8
+	// rune - alias for int32
+	// float32 float64
+	// complex64 complex128
+
+	// Using var
+	// var name = "Kingkong"
+
+	// short declaration
+	name := "Kingkong"
+
 	var age int32 = 100
 
-	// bool
-	var isCool = true
-	isCool = false
+	// constant
+	const isCool = false
 
-	// shorthand
-	// name := "King Kong,"
-	// email := "kingkong@gmail.com"
+	size := 225.883
 
-	// shorter
-	name, email := "King Kong", "kingkong@gmail.com"
+	// declare more then one variable
+	username, password := "god", "123456"
 
-	// float (64 by default)
-	size := 1.23
+	fmt.Println(name, age, username, password)
 
-	fmt.Println(name, email, age, isCool)
+	// https://golang.org/pkg/fmt/
+	// find type of given value
 	fmt.Printf("%T\n", size)
 }
